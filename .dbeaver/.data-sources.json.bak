@@ -1,0 +1,77 @@
+{
+	"folders": {},
+	"connections": {
+		"mariaDB-187a75e859e-5f812e6877bc802b": {
+			"provider": "mysql",
+			"driver": "mariaDB",
+			"name": "green_db",
+			"save-password": true,
+			"configuration": {
+				"host": "localhost",
+				"port": "3306",
+				"database": "green_db",
+				"url": "jdbc:mariadb://localhost:3306/green_db",
+				"configurationType": "MANUAL",
+				"home": "mysql_client",
+				"type": "dev",
+				"auth-model": "native"
+			}
+		},
+		"mariaDB-187a7659562-16128b1466a87783": {
+			"provider": "mysql",
+			"driver": "mariaDB",
+			"name": "mysql",
+			"save-password": true,
+			"configuration": {
+				"host": "localhost",
+				"port": "3306",
+				"database": "mysql",
+				"url": "jdbc:mariadb://localhost:3306/mysql",
+				"configurationType": "MANUAL",
+				"home": "mysql_client",
+				"type": "dev",
+				"auth-model": "native"
+			}
+		},
+		"mariaDB-187a769a5ed-27e9721e49ba86b4": {
+			"provider": "mysql",
+			"driver": "mariaDB",
+			"name": "kr_db",
+			"save-password": true,
+			"configuration": {
+				"host": "localhost",
+				"port": "3306",
+				"database": "kr_db",
+				"url": "jdbc:mariadb://localhost:3306/kr_db",
+				"configurationType": "MANUAL",
+				"home": "mysql_client",
+				"type": "dev",
+				"auth-model": "native"
+			}
+		}
+	},
+	"virtual-models": {
+		"mariaDB-187a769a5ed-27e9721e49ba86b4": {
+			"kr_db": {
+				":stl": {
+					"properties": {
+						"erd.diagram.state": {
+							"serialized": "\u003cdiagram version\u003d\"1\" name\u003d\"empty\" time\u003d\"202305080136\"\u003e\u003centities\u003e\u003cdata-source id\u003d\"mariaDB-187a769a5ed-27e9721e49ba86b4\"\u003e\u003centity id\u003d\"1\" name\u003d\"stl\" fq-name\u003d\"kr_db.stl\" order\u003d\"0\" color-bg\u003d\"128,64,32\" x\u003d\"170\" y\u003d\"22\"\u003e\u003cpath name\u003d\"kr_db\"/\u003e\u003c/entity\u003e\u003centity id\u003d\"2\" name\u003d\"mark\" fq-name\u003d\"kr_db.mark\" order\u003d\"1\" x\u003d\"519\" y\u003d\"111\"\u003e\u003cpath name\u003d\"kr_db\"/\u003e\u003c/entity\u003e\u003centity id\u003d\"3\" name\u003d\"members\" fq-name\u003d\"kr_db.members\" order\u003d\"2\" x\u003d\"409\" y\u003d\"462\"\u003e\u003cpath name\u003d\"kr_db\"/\u003e\u003c/entity\u003e\u003centity id\u003d\"4\" name\u003d\"orders\" fq-name\u003d\"kr_db.orders\" order\u003d\"3\" x\u003d\"287\" y\u003d\"380\"\u003e\u003cpath name\u003d\"kr_db\"/\u003e\u003c/entity\u003e\u003centity id\u003d\"5\" name\u003d\"prd\" fq-name\u003d\"kr_db.prd\" order\u003d\"4\" x\u003d\"789\" y\u003d\"369\"\u003e\u003cpath name\u003d\"kr_db\"/\u003e\u003c/entity\u003e\u003centity id\u003d\"6\" name\u003d\"prd_img\" fq-name\u003d\"kr_db.prd_img\" order\u003d\"5\" x\u003d\"540\" y\u003d\"294\"\u003e\u003cpath name\u003d\"kr_db\"/\u003e\u003c/entity\u003e\u003centity id\u003d\"7\" name\u003d\"qnaboard\" fq-name\u003d\"kr_db.qnaboard\" order\u003d\"6\" x\u003d\"763\" y\u003d\"208\"\u003e\u003cpath name\u003d\"kr_db\"/\u003e\u003c/entity\u003e\u003c/data-source\u003e\u003c/entities\u003e\u003crelations/\u003e\u003c/diagram\u003e"
+						}
+					}
+				}
+			}
+		}
+	},
+	"connection-types": {
+		"dev": {
+			"name": "Development",
+			"color": "255,255,255",
+			"description": "Regular development database",
+			"auto-commit": true,
+			"confirm-execute": false,
+			"confirm-data-change": false,
+			"auto-close-transactions": false
+		}
+	}
+}
